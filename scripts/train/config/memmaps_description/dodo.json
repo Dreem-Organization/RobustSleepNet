@@ -1,0 +1,59 @@
+{
+  "signals": [
+    {
+      "name": "eeg",
+      "signals_name": [
+        "dodo_C3_M2",
+        "dodo_C4_M1",
+        "dodo_F3_F4",
+        "dodo_F3_M2",
+        "dodo_F4_O2",
+        "dodo_F3_O1",
+        "dodo_O1_M2",
+        "dodo_O2_M1",
+        "dodo_EMG",
+        "dodo_EOG1",
+        "dodo_EOG2"
+      ],
+      "signals": [
+        "signals/eeg/C3_M2",
+        "signals/eeg/C4_M1",
+        "signals/eeg/F3_F4",
+        "signals/eeg/F3_M2",
+        "signals/eeg/F4_O2",
+        "signals/eeg/F3_O1",
+        "signals/eeg/O1_M2",
+        "signals/eeg/O2_M1",
+        "signals/emg/EMG",
+        "signals/eog/EOG1",
+        "signals/eog/EOG2"
+      ],
+      "processings": [
+        {
+          "type": "filter_bandpass",
+          "args": {}
+        },
+        {
+          "type": "poly_resample",
+          "args": {
+            "target_frequency": 60
+          }
+        },
+        {
+          "type": "normalize_signal_IQR",
+          "args": {
+            "clip_IQR": 20
+          }
+        },
+        {
+          "type": "padding",
+          "args": {
+            "padding_duration": 900,
+            "value": 0
+          }
+        }
+      ]
+    }
+  ],
+  "features": []
+}

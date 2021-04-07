@@ -1,0 +1,131 @@
+{
+  "signals": [
+    {
+      "name": "eeg",
+      "signals": [
+        {
+          "signals": [
+            "signals/EEG/C4",
+            "signals/EEG/M1"
+          ],
+          "processings": [
+            {
+              "type": "weighted_sum",
+              "args": {
+                "weights": [
+                  1,
+                  -1
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "signals": [
+            "signals/EEG/C3",
+            "signals/EEG/M2"
+          ],
+          "processings": [
+            {
+              "type": "weighted_sum",
+              "args": {
+                "weights": [
+                  1,
+                  -1
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "signals": [
+            "signals/EEG/C4",
+            "signals/EEG/E1"
+          ],
+          "processings": [
+            {
+              "type": "weighted_sum",
+              "args": {
+                "weights": [
+                  1,
+                  -1
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "signals": [
+            "signals/EEG/C4",
+            "signals/EEG/E2"
+          ],
+          "processings": [
+            {
+              "type": "weighted_sum",
+              "args": {
+                "weights": [
+                  1,
+                  -1
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "signals": [
+            "signals/EEG/E1",
+            "signals/EEG/E2"
+          ],
+          "processings": [
+            {
+              "type": "weighted_sum",
+              "args": {
+                "weights": [
+                  0.5,
+                  0.5
+                ]
+              }
+            }
+          ]
+        },
+        "signals/EOG/RChin",
+        "signals/EOG/LChin"
+      ],
+      "signals_name": [
+        "mros_c4_m1",
+        "mros_c3_m2",
+        "mros_c4_e1",
+        "mros_c4_e2",
+        "mros_eog",
+        "mros_emg_r",
+        "mros_emg_l"
+      ],
+      "processings": [
+        {
+          "type": "filter_bandpass",
+          "args": {}
+        },
+        {
+          "type": "poly_resample",
+          "args": {
+            "target_frequency": 60
+          }
+        },
+        {
+          "type": "normalize_signal_IQR",
+          "args": {
+            "clip_IQR": 20
+          }
+        },
+        {
+          "type": "padding",
+          "args": {
+            "padding_duration": 900,
+            "value": 0
+          }
+        }
+      ]
+    }
+  ],
+  "features": []
+}

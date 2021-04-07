@@ -1,0 +1,7 @@
+{
+  "source_dataset": "dodh",
+  "type": "kfolds",
+  "args": {
+    "n_folds": 5
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "signals": [
+    {
+      "name": "eeg",
+      "normalization": [
+        {
+          "type": "clip_and_scale",
+          "args": {
+            "min_value": -20,
+            "max_value": 20
+          }
+        },
+        {
+          "type": "spectrogram",
+          "args": {
+            "logpower": true,
+            "window_duration": 2,
+            "window_overlap": 1,
+            "fs": 60,
+            "clamp": 1e-20
+          }
+        },
+        {
+          "type": "standardize_online",
+          "args": {
+            "axis": [
+              1,
+              -1
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "features": [
+  ]
+}

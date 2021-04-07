@@ -1,0 +1,148 @@
+{
+  "source_dataset": "sleep_edf",
+  "type": "kfolds",
+  "args": {
+    "n_folds": 5,
+    "subjects": [
+      {
+        "subject": "SC419",
+        "records": [
+          "SC4191E0-PSG",
+          "SC4192E0-PSG"
+        ]
+      },
+      {
+        "subject": "SC403",
+        "records": [
+          "SC4031E0-PSG",
+          "SC4032E0-PSG"
+        ]
+      },
+      {
+        "subject": "SC407",
+        "records": [
+          "SC4071E0-PSG",
+          "SC4072E0-PSG"
+        ]
+      },
+      {
+        "subject": "SC410",
+        "records": [
+          "SC4101E0-PSG",
+          "SC4102E0-PSG"
+        ]
+      },
+      {
+        "subject": "SC409",
+        "records": [
+          "SC4092E0-PSG",
+          "SC4091E0-PSG"
+        ]
+      },
+      {
+        "subject": "SC408",
+        "records": [
+          "SC4082E0-PSG",
+          "SC4081E0-PSG"
+        ]
+      },
+      {
+        "subject": "SC401",
+        "records": [
+          "SC4011E0-PSG",
+          "SC4012E0-PSG"
+        ]
+      },
+      {
+        "subject": "SC402",
+        "records": [
+          "SC4022E0-PSG",
+          "SC4021E0-PSG"
+        ]
+      },
+      {
+        "subject": "SC404",
+        "records": [
+          "SC4042E0-PSG",
+          "SC4041E0-PSG"
+        ]
+      },
+      {
+        "subject": "SC414",
+        "records": [
+          "SC4142E0-PSG",
+          "SC4141E0-PSG"
+        ]
+      },
+      {
+        "subject": "SC400",
+        "records": [
+          "SC4001E0-PSG",
+          "SC4002E0-PSG"
+        ]
+      },
+      {
+        "subject": "SC405",
+        "records": [
+          "SC4051E0-PSG",
+          "SC4052E0-PSG"
+        ]
+      },
+      {
+        "subject": "SC411",
+        "records": [
+          "SC4111E0-PSG",
+          "SC4112E0-PSG"
+        ]
+      },
+      {
+        "subject": "SC418",
+        "records": [
+          "SC4181E0-PSG",
+          "SC4182E0-PSG"
+        ]
+      },
+      {
+        "subject": "SC412",
+        "records": [
+          "SC4121E0-PSG",
+          "SC4122E0-PSG"
+        ]
+      },
+      {
+        "subject": "SC416",
+        "records": [
+          "SC4161E0-PSG",
+          "SC4162E0-PSG"
+        ]
+      },
+      {
+        "subject": "SC417",
+        "records": [
+          "SC4171E0-PSG",
+          "SC4172E0-PSG"
+        ]
+      },
+      {
+        "subject": "SC406",
+        "records": [
+          "SC4062E0-PSG",
+          "SC4061E0-PSG"
+        ]
+      },
+      {
+        "subject": "SC415",
+        "records": [
+          "SC4151E0-PSG",
+          "SC4152E0-PSG"
+        ]
+      },
+      {
+        "subject": "SC413",
+        "records": [
+          "SC4131E0-PSG"
+        ]
+      }
+    ]
+  }
+}

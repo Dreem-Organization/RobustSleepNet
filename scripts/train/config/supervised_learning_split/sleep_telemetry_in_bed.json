@@ -1,0 +1,163 @@
+{
+  "source_dataset": "sleep_edf_in_bed",
+  "type": "kfolds",
+  "args": {
+    "n_folds": 5,
+    "subjects": [
+      {
+        "subject": "ST701",
+        "records": [
+          "ST7012J0-PSG",
+          "ST7011J0-PSG"
+        ]
+      },
+      {
+        "subject": "ST718",
+        "records": [
+          "ST7181J0-PSG",
+          "ST7182J0-PSG"
+        ]
+      },
+      {
+        "subject": "ST721",
+        "records": [
+          "ST7211J0-PSG",
+          "ST7212J0-PSG"
+        ]
+      },
+      {
+        "subject": "ST724",
+        "records": [
+          "ST7242J0-PSG",
+          "ST7241J0-PSG"
+        ]
+      },
+      {
+        "subject": "ST713",
+        "records": [
+          "ST7131J0-PSG",
+          "ST7132J0-PSG"
+        ]
+      },
+      {
+        "subject": "ST708",
+        "records": [
+          "ST7082J0-PSG",
+          "ST7081J0-PSG"
+        ]
+      },
+      {
+        "subject": "ST711",
+        "records": [
+          "ST7111J0-PSG",
+          "ST7112J0-PSG"
+        ]
+      },
+      {
+        "subject": "ST707",
+        "records": [
+          "ST7072J0-PSG",
+          "ST7071J0-PSG"
+        ]
+      },
+      {
+        "subject": "ST716",
+        "records": [
+          "ST7162J0-PSG",
+          "ST7161J0-PSG"
+        ]
+      },
+      {
+        "subject": "ST717",
+        "records": [
+          "ST7171J0-PSG",
+          "ST7172J0-PSG"
+        ]
+      },
+      {
+        "subject": "ST705",
+        "records": [
+          "ST7051J0-PSG",
+          "ST7052J0-PSG"
+        ]
+      },
+      {
+        "subject": "ST715",
+        "records": [
+          "ST7152J0-PSG",
+          "ST7151J0-PSG"
+        ]
+      },
+      {
+        "subject": "ST720",
+        "records": [
+          "ST7202J0-PSG",
+          "ST7201J0-PSG"
+        ]
+      },
+      {
+        "subject": "ST722",
+        "records": [
+          "ST7221J0-PSG",
+          "ST7222J0-PSG"
+        ]
+      },
+      {
+        "subject": "ST712",
+        "records": [
+          "ST7121J0-PSG",
+          "ST7122J0-PSG"
+        ]
+      },
+      {
+        "subject": "ST719",
+        "records": [
+          "ST7192J0-PSG",
+          "ST7191J0-PSG"
+        ]
+      },
+      {
+        "subject": "ST710",
+        "records": [
+          "ST7101J0-PSG",
+          "ST7102J0-PSG"
+        ]
+      },
+      {
+        "subject": "ST702",
+        "records": [
+          "ST7022J0-PSG",
+          "ST7021J0-PSG"
+        ]
+      },
+      {
+        "subject": "ST706",
+        "records": [
+          "ST7062J0-PSG",
+          "ST7061J0-PSG"
+        ]
+      },
+      {
+        "subject": "ST709",
+        "records": [
+          "ST7092J0-PSG",
+          "ST7091J0-PSG"
+        ]
+      },
+      {
+        "subject": "ST714",
+        "records": [
+          "ST7142J0-PSG",
+          "ST7141J0-PSG"
+        ]
+      },
+      {
+        "subject": "ST704",
+        "records": [
+          "ST7041J0-PSG",
+          "ST7042J0-PSG"
+        ]
+      }
+    ]
+  }
+}

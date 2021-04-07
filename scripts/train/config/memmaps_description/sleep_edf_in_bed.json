@@ -1,0 +1,43 @@
+{
+  "signals": [
+    {
+      "name": "eeg",
+      "signals": [
+        "signals/eeg/EEG Fpz-Cz",
+        "signals/eeg/EEG Pz-Oz",
+        "signals/eog/EOG horizontal"
+      ],
+      "signals_name": [
+        "sleep_edf_fpz_cz",
+        "sleep_edf_pz_oz",
+        "sleep_edf_eog"
+      ],
+      "processings": [
+        {
+          "type": "filter_bandpass",
+          "args": {}
+        },
+        {
+          "type": "poly_resample",
+          "args": {
+            "target_frequency": 60
+          }
+        },
+        {
+          "type": "normalize_signal_IQR",
+          "args": {
+            "clip_IQR": 20
+          }
+        },
+        {
+          "type": "padding",
+          "args": {
+            "padding_duration": 900,
+            "value": 0
+          }
+        }
+      ]
+    }
+  ],
+  "features": []
+}

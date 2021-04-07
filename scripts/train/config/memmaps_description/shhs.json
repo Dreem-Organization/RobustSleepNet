@@ -1,0 +1,87 @@
+{
+  "signals": [
+    {
+      "name": "eeg",
+      "signals": [
+        {
+          "signals": [
+            "signals/EEG/EEG",
+            "signals/EEG/EEG(sec)",
+            "signals/EMG/EMG"
+          ],
+          "processings": [
+            {
+              "type": "filter_bandpass",
+              "args": {}
+            },
+            {
+              "type": "poly_resample",
+              "args": {
+                "target_frequency": 60
+              }
+            },
+            {
+              "type": "normalize_signal_IQR",
+              "args": {
+                "clip_IQR": 20
+              }
+            },
+            {
+              "type": "padding",
+              "args": {
+                "padding_duration": 900,
+                "value": 0
+              }
+            }
+          ]
+        },
+        {
+          "signals": [
+            "signals/EOG/EOG(L)",
+            "signals/EOG/EOG(R)"
+          ],
+          "processings": [
+            {
+              "type": "poly_resample",
+              "args": {
+                "target_frequency": 100
+              }
+            },
+            {
+              "type": "filter_bandpass",
+              "args": {}
+            },
+            {
+              "type": "poly_resample",
+              "args": {
+                "target_frequency": 60
+              }
+            },
+            {
+              "type": "normalize_signal_IQR",
+              "args": {
+                "clip_IQR": 20
+              }
+            },
+            {
+              "type": "padding",
+              "args": {
+                "padding_duration": 900,
+                "value": 0
+              }
+            }
+          ]
+        }
+      ],
+      "signals_name": [
+        "eeg_shhs",
+        "eeg_1_shhs",
+        "emg_shhs",
+        "eogl_shhs",
+        "eogr_shhs"
+      ],
+      "processings": []
+    }
+  ],
+  "features": []
+}

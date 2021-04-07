@@ -1,0 +1,224 @@
+{
+  "signals": [
+    {
+      "name": "eeg",
+      "signals": [
+        {
+          "name": "eeg",
+          "signals": [
+            {
+              "signals": [
+                "signals/eeg/c4",
+                "signals/eeg/o1"
+              ],
+              "processings": [
+                {
+                  "type": "weighted_sum",
+                  "args": {
+                    "weights": [
+                      1,
+                      -1
+                    ]
+                  }
+                },
+                {
+                  "type": "filter_bandpass",
+                  "args": {}
+                },
+                {
+                  "type": "poly_resample",
+                  "args": {
+                    "target_frequency": 60
+                  }
+                },
+                {
+                  "type": "normalize_signal_IQR",
+                  "args": {
+                    "clip_IQR": 20
+                  }
+                },
+                {
+                  "type": "padding",
+                  "args": {
+                    "padding_duration": 900,
+                    "value": 0
+                  }
+                }
+              ]
+            },
+            {
+              "signals": [
+                "signals/eeg/f4",
+                "signals/eog/left horiz"
+              ],
+              "processings": [
+                {
+                  "type": "weighted_sum",
+                  "args": {
+                    "weights": [
+                      1,
+                      -1
+                    ]
+                  }
+                },
+                {
+                  "type": "filter_bandpass",
+                  "args": {}
+                },
+                {
+                  "type": "poly_resample",
+                  "args": {
+                    "target_frequency": 60
+                  }
+                },
+                {
+                  "type": "normalize_signal_IQR",
+                  "args": {
+                    "clip_IQR": 20
+                  }
+                },
+                {
+                  "type": "padding",
+                  "args": {
+                    "padding_duration": 900,
+                    "value": 0
+                  }
+                }
+              ]
+            },
+            {
+              "signals": [
+                "signals/eeg/f8",
+                "signals/eeg/cz"
+              ],
+              "processings": [
+                {
+                  "type": "weighted_sum",
+                  "args": {
+                    "weights": [
+                      1,
+                      -1
+                    ]
+                  }
+                },
+                {
+                  "type": "filter_bandpass",
+                  "args": {}
+                },
+                {
+                  "type": "poly_resample",
+                  "args": {
+                    "target_frequency": 60
+                  }
+                },
+                {
+                  "type": "normalize_signal_IQR",
+                  "args": {
+                    "clip_IQR": 20
+                  }
+                },
+                {
+                  "type": "padding",
+                  "args": {
+                    "padding_duration": 900,
+                    "value": 0
+                  }
+                }
+              ]
+            },
+            {
+              "signals": [
+                "signals/eog/right horiz",
+                "signals/eog/left horiz"
+              ],
+              "processings": [
+                {
+                  "type": "weighted_sum",
+                  "args": {
+                    "weights": [
+                      0.5,
+                      0.5
+                    ]
+                  }
+                },
+                {
+                  "type": "filter_bandpass",
+                  "args": {}
+                },
+                {
+                  "type": "poly_resample",
+                  "args": {
+                    "target_frequency": 60
+                  }
+                },
+                {
+                  "type": "normalize_signal_IQR",
+                  "args": {
+                    "clip_IQR": 20
+                  }
+                },
+                {
+                  "type": "padding",
+                  "args": {
+                    "padding_duration": 900,
+                    "value": 0
+                  }
+                }
+              ]
+            },
+            {
+              "signals": [
+                "signals/emg/chin1",
+                "signals/emg/chin2"
+              ],
+              "processings": [
+                {
+                  "type": "weighted_sum",
+                  "args": {
+                    "weights": [
+                      0.5,
+                      0.5
+                    ]
+                  }
+                },
+                {
+                  "type": "filter_bandpass",
+                  "args": {}
+                },
+                {
+                  "type": "poly_resample",
+                  "args": {
+                    "target_frequency": 60
+                  }
+                },
+                {
+                  "type": "normalize_signal_IQR",
+                  "args": {
+                    "clip_IQR": 20
+                  }
+                },
+                {
+                  "type": "padding",
+                  "args": {
+                    "padding_duration": 900,
+                    "value": 0
+                  }
+                }
+              ]
+            }
+          ],
+          "processings": []
+        }
+      ],
+      "signals_name": [
+        "mass_c4_o1",
+        "mass_f4_eog_left",
+        "mass_f8_cz",
+        "mass_eog",
+        "mass_emg"
+      ],
+      "processings": []
+    }
+  ],
+  "features": []
+}

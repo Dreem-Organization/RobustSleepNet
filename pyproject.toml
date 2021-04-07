@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "robust_sleep_net"
+version = "0.1.2"
+description = ""
+authors = ["Antoine Guillot <antoine@dreem.com>","Valentin Thorey <valentin@dreem.com>"]
+packages = [
+    { include = "robust_sleep_net", from = "." },
+]
+
+[tool.poetry.dependencies]
+python = "^3.6.1"
+torch = "^1.6.0"
+torchvision = "^0.7.0"
+torchcontrib = {git = "https://github.com/pytorch/contrib", rev = "bdf4da5aa20082d9c81b970fb1b0734ec21db5e6"}
+numpy = "^1.19.2"
+scipy = "^1.5.2"
+Cython = "^0.29.21"
+h5py = "^2.10.0"
+tqdm = "^4.49.0"
+boto3 = "^1.14.62"
+requests = "^2.24.0"
+pytest = "^6.0.2"
+pytest-cov = "^2.10.1"
+scikit-learn = "^0.23.2"
+joblib = "^0.16.0"
+gitpython = "^3.1.8"
+pyedflib = "^0.1.18"
+patsy = "^0.5.1"
+awscli = "^1.18.139"
+wget = "^3.2"
+pint = "^0.16"
+click = "^7.1.2"
+mne = "^0.22.0"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+inference_on_edf_file = 'robust_sleep_net.utils.inference.run:main'
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

@@ -1,0 +1,41 @@
+{
+  "n_class": 5,
+  "type": "modulo_net",
+  "output_mode": "many",
+  "eval_output_mode": "many",
+  "encoders": {
+    "eeg": {
+      "type": "RobustSleepEncoder",
+      "args": {
+        "hidden_layers": 64,
+        "filter_dim": 32,
+        "dropout": 0.5,
+        "bidir": true,
+        "context_size": 30,
+        "n_virtual_channels": 4
+      }
+    }
+  },
+  "reducers": {
+    "eeg": {
+      "type": "AttentionWithReduction",
+      "args": {
+        "context_size": 25,
+        "output_dim": 50
+      }
+    }
+  },
+  "modalities_merger": {
+    "type": "Concatenation",
+    "args": {}
+  },
+  "sequence_encoder": {
+    "type": "ResidualGRUSequenceEncoder",
+    "args": {
+      "cells": 50,
+      "dropout": 0.5,
+      "bidir": true,
+      "layers": 2
+    }
+  }
+}

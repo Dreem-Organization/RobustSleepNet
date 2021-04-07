@@ -1,0 +1,49 @@
+{
+  "signals": [
+    {
+      "name": "eeg",
+      "signals": [
+        "signals/EOG/EOG-L",
+        "signals/EOG/EOG-R",
+        "signals/EEG/EEG1",
+        "signals/EEG/EEG2",
+        "signals/EEG/EEG3",
+        "signals/EMG/EMG"
+      ],
+      "signals_name": [
+        "signals/EOG/EOG-L",
+        "signals/EOG/EOG-R",
+        "signals/EEG/EEG1",
+        "signals/EEG/EEG2",
+        "signals/EEG/EEG3",
+        "signals/EMG/EMG"
+      ],
+      "processings": [
+        {
+          "type": "filter_bandpass",
+          "args": {}
+        },
+        {
+          "type": "poly_resample",
+          "args": {
+            "target_frequency": 60
+          }
+        },
+        {
+          "type": "normalize_signal_IQR",
+          "args": {
+            "clip_IQR": 20
+          }
+        },
+        {
+          "type": "padding",
+          "args": {
+            "padding_duration": 900,
+            "value": 0
+          }
+        }
+      ]
+    }
+  ],
+  "features": []
+}

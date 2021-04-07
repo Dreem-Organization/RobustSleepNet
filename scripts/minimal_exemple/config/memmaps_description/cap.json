@@ -1,0 +1,121 @@
+{
+  "signals": [
+    {
+      "name": "eeg",
+      "signals": [
+        {
+          "signals": [
+            [
+              "signals/C4-A1",
+              "signals/C3-A2"
+            ]
+          ],
+          "processings": [
+            {
+              "type": "filter_bandpass",
+              "args": {}
+            },
+            {
+              "type": "poly_resample",
+              "args": {
+                "target_frequency": 60
+              }
+            },
+            {
+              "type": "normalize_signal_IQR",
+              "args": {
+                "clip_IQR": 20
+              }
+            },
+            {
+              "type": "padding",
+              "args": {
+                "padding_duration": 900,
+                "value": 0
+              }
+            }
+          ]
+        },
+        {
+          "signals": [
+            [
+              "signals/F3-C3",
+              "signals/F4-C4",
+              "signals/FP1-F3",
+              "signals/FP2-F4",
+              "signals/Fp2-F4",
+              "signals/C4-A1",
+              "signals/C3-A2"
+            ]
+          ],
+          "processings": [
+            {
+              "type": "filter_bandpass",
+              "args": {}
+            },
+            {
+              "type": "poly_resample",
+              "args": {
+                "target_frequency": 60
+              }
+            },
+            {
+              "type": "normalize_signal_IQR",
+              "args": {
+                "clip_IQR": 20
+              }
+            },
+            {
+              "type": "padding",
+              "args": {
+                "padding_duration": 900,
+                "value": 0
+              }
+            }
+          ]
+        },
+        {
+          "signals": [
+            [
+              "signals/ROC-LOC",
+              "signals/C4-A1",
+              "signals/C3-A2"
+            ]
+          ],
+          "processings": [
+            {
+              "type": "filter_bandpass",
+              "args": {}
+            },
+            {
+              "type": "poly_resample",
+              "args": {
+                "target_frequency": 60
+              }
+            },
+            {
+              "type": "normalize_signal_IQR",
+              "args": {
+                "clip_IQR": 20
+              }
+            },
+            {
+              "type": "padding",
+              "args": {
+                "padding_duration": 900,
+                "value": 0
+              }
+            }
+          ]
+        }
+      ],
+      "signals_name": [
+        "cap_eeg",
+        "cap_eeg_front",
+        "cap_eog"
+      ],
+      "processings": []
+    }
+  ],
+  "features": []
+}

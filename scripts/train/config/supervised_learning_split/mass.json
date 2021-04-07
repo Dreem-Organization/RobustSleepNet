@@ -1,0 +1,699 @@
+{
+  "source_dataset": "mass",
+  "type": "kfolds",
+  "args": {
+    "n_folds": 5,
+    "subjects": [
+      {
+        "subject": "01-03-0045 PSG",
+        "records": [
+          "01-03-0045 PSG"
+        ]
+      },
+      {
+        "subject": "01-03-0040 PSG",
+        "records": [
+          "01-03-0040 PSG"
+        ]
+      },
+      {
+        "subject": "01-03-0010 PSG",
+        "records": [
+          "01-03-0010 PSG"
+        ]
+      },
+      {
+        "subject": "01-03-0004 PSG",
+        "records": [
+          "01-03-0004 PSG"
+        ]
+      },
+      {
+        "subject": "01-03-0030 PSG",
+        "records": [
+          "01-03-0030 PSG"
+        ]
+      },
+      {
+        "subject": "01-03-0053 PSG",
+        "records": [
+          "01-03-0053 PSG"
+        ]
+      },
+      {
+        "subject": "01-03-0044 PSG",
+        "records": [
+          "01-03-0044 PSG"
+        ]
+      },
+      {
+        "subject": "01-03-0017 PSG",
+        "records": [
+          "01-03-0017 PSG"
+        ]
+      },
+      {
+        "subject": "01-03-0027 PSG",
+        "records": [
+          "01-03-0027 PSG"
+        ]
+      },
+      {
+        "subject": "01-03-0026 PSG",
+        "records": [
+          "01-03-0026 PSG"
+        ]
+      },
+      {
+        "subject": "01-03-0028 PSG",
+        "records": [
+          "01-03-0028 PSG"
+        ]
+      },
+      {
+        "subject": "01-03-0059 PSG",
+        "records": [
+          "01-03-0059 PSG"
+        ]
+      },
+      {
+        "subject": "01-03-0018 PSG",
+        "records": [
+          "01-03-0018 PSG"
+        ]
+      },
+      {
+        "subject": "01-03-0052 PSG",
+        "records": [
+          "01-03-0052 PSG"
+        ]
+      },
+      {
+        "subject": "01-03-0038 PSG",
+        "records": [
+          "01-03-0038 PSG"
+        ]
+      },
+      {
+        "subject": "01-03-0007 PSG",
+        "records": [
+          "01-03-0007 PSG"
+        ]
+      },
+      {
+        "subject": "01-03-0002 PSG",
+        "records": [
+          "01-03-0002 PSG"
+        ]
+      },
+      {
+        "subject": "01-03-0005 PSG",
+        "records": [
+          "01-03-0005 PSG"
+        ]
+      },
+      {
+        "subject": "01-03-0047 PSG",
+        "records": [
+          "01-03-0047 PSG"
+        ]
+      },
+      {
+        "subject": "01-03-0057 PSG",
+        "records": [
+          "01-03-0057 PSG"
+        ]
+      },
+      {
+        "subject": "01-03-0032 PSG",
+        "records": [
+          "01-03-0032 PSG"
+        ]
+      },
+      {
+        "subject": "01-03-0019 PSG",
+        "records": [
+          "01-03-0019 PSG"
+        ]
+      },
+      {
+        "subject": "01-03-0016 PSG",
+        "records": [
+          "01-03-0016 PSG"
+        ]
+      },
+      {
+        "subject": "01-03-0048 PSG",
+        "records": [
+          "01-03-0048 PSG"
+        ]
+      },
+      {
+        "subject": "01-03-0055 PSG",
+        "records": [
+          "01-03-0055 PSG"
+        ]
+      },
+      {
+        "subject": "01-03-0021 PSG",
+        "records": [
+          "01-03-0021 PSG"
+        ]
+      },
+      {
+        "subject": "01-03-0023 PSG",
+        "records": [
+          "01-03-0023 PSG"
+        ]
+      },
+      {
+        "subject": "01-03-0064 PSG",
+        "records": [
+          "01-03-0064 PSG"
+        ]
+      },
+      {
+        "subject": "01-03-0001 PSG",
+        "records": [
+          "01-03-0001 PSG"
+        ]
+      },
+      {
+        "subject": "01-03-0024 PSG",
+        "records": [
+          "01-03-0024 PSG"
+        ]
+      },
+      {
+        "subject": "01-03-0006 PSG",
+        "records": [
+          "01-03-0006 PSG"
+        ]
+      },
+      {
+        "subject": "01-03-0014 PSG",
+        "records": [
+          "01-03-0014 PSG"
+        ]
+      },
+      {
+        "subject": "01-03-0054 PSG",
+        "records": [
+          "01-03-0054 PSG"
+        ]
+      },
+      {
+        "subject": "01-03-0041 PSG",
+        "records": [
+          "01-03-0041 PSG"
+        ]
+      },
+      {
+        "subject": "01-03-0036 PSG",
+        "records": [
+          "01-03-0036 PSG"
+        ]
+      },
+      {
+        "subject": "01-03-0008 PSG",
+        "records": [
+          "01-03-0008 PSG"
+        ]
+      },
+      {
+        "subject": "01-03-0025 PSG",
+        "records": [
+          "01-03-0025 PSG"
+        ]
+      },
+      {
+        "subject": "01-03-0050 PSG",
+        "records": [
+          "01-03-0050 PSG"
+        ]
+      },
+      {
+        "subject": "01-03-0034 PSG",
+        "records": [
+          "01-03-0034 PSG"
+        ]
+      },
+      {
+        "subject": "01-03-0042 PSG",
+        "records": [
+          "01-03-0042 PSG"
+        ]
+      },
+      {
+        "subject": "01-03-0060 PSG",
+        "records": [
+          "01-03-0060 PSG"
+        ]
+      },
+      {
+        "subject": "01-03-0011 PSG",
+        "records": [
+          "01-03-0011 PSG"
+        ]
+      },
+      {
+        "subject": "01-03-0035 PSG",
+        "records": [
+          "01-03-0035 PSG"
+        ]
+      },
+      {
+        "subject": "01-03-0012 PSG",
+        "records": [
+          "01-03-0012 PSG"
+        ]
+      },
+      {
+        "subject": "01-03-0009 PSG",
+        "records": [
+          "01-03-0009 PSG"
+        ]
+      },
+      {
+        "subject": "01-03-0058 PSG",
+        "records": [
+          "01-03-0058 PSG"
+        ]
+      },
+      {
+        "subject": "01-03-0003 PSG",
+        "records": [
+          "01-03-0003 PSG"
+        ]
+      },
+      {
+        "subject": "01-03-0033 PSG",
+        "records": [
+          "01-03-0033 PSG"
+        ]
+      },
+      {
+        "subject": "01-03-0062 PSG",
+        "records": [
+          "01-03-0062 PSG"
+        ]
+      },
+      {
+        "subject": "01-03-0031 PSG",
+        "records": [
+          "01-03-0031 PSG"
+        ]
+      },
+      {
+        "subject": "01-03-0063 PSG",
+        "records": [
+          "01-03-0063 PSG"
+        ]
+      },
+      {
+        "subject": "01-03-0056 PSG",
+        "records": [
+          "01-03-0056 PSG"
+        ]
+      },
+      {
+        "subject": "01-03-0051 PSG",
+        "records": [
+          "01-03-0051 PSG"
+        ]
+      },
+      {
+        "subject": "01-03-0039 PSG",
+        "records": [
+          "01-03-0039 PSG"
+        ]
+      },
+      {
+        "subject": "01-03-0013 PSG",
+        "records": [
+          "01-03-0013 PSG"
+        ]
+      },
+      {
+        "subject": "01-03-0015 PSG",
+        "records": [
+          "01-03-0015 PSG"
+        ]
+      },
+      {
+        "subject": "01-03-0020 PSG",
+        "records": [
+          "01-03-0020 PSG"
+        ]
+      },
+      {
+        "subject": "01-03-0022 PSG",
+        "records": [
+          "01-03-0022 PSG"
+        ]
+      },
+      {
+        "subject": "01-03-0037 PSG",
+        "records": [
+          "01-03-0037 PSG"
+        ]
+      },
+      {
+        "subject": "01-03-0046 PSG",
+        "records": [
+          "01-03-0046 PSG"
+        ]
+      },
+      {
+        "subject": "01-03-0029 PSG",
+        "records": [
+          "01-03-0029 PSG"
+        ]
+      },
+      {
+        "subject": "01-03-0061 PSG",
+        "records": [
+          "01-03-0061 PSG"
+        ]
+      },
+      {
+        "subject": "01-01-0050 PSG",
+        "records": [
+          "01-01-0050 PSG"
+        ]
+      },
+      {
+        "subject": "01-01-0007 PSG",
+        "records": [
+          "01-01-0007 PSG"
+        ]
+      },
+      {
+        "subject": "01-01-0022 PSG",
+        "records": [
+          "01-01-0022 PSG"
+        ]
+      },
+      {
+        "subject": "01-01-0051 PSG",
+        "records": [
+          "01-01-0051 PSG"
+        ]
+      },
+      {
+        "subject": "01-01-0028 PSG",
+        "records": [
+          "01-01-0028 PSG"
+        ]
+      },
+      {
+        "subject": "01-01-0043 PSG",
+        "records": [
+          "01-01-0043 PSG"
+        ]
+      },
+      {
+        "subject": "01-01-0031 PSG",
+        "records": [
+          "01-01-0031 PSG"
+        ]
+      },
+      {
+        "subject": "01-01-0048 PSG",
+        "records": [
+          "01-01-0048 PSG"
+        ]
+      },
+      {
+        "subject": "01-01-0053 PSG",
+        "records": [
+          "01-01-0053 PSG"
+        ]
+      },
+      {
+        "subject": "01-01-0012 PSG",
+        "records": [
+          "01-01-0012 PSG"
+        ]
+      },
+      {
+        "subject": "01-01-0044 PSG",
+        "records": [
+          "01-01-0044 PSG"
+        ]
+      },
+      {
+        "subject": "01-01-0020 PSG",
+        "records": [
+          "01-01-0020 PSG"
+        ]
+      },
+      {
+        "subject": "01-01-0052 PSG",
+        "records": [
+          "01-01-0052 PSG"
+        ]
+      },
+      {
+        "subject": "01-01-0008 PSG",
+        "records": [
+          "01-01-0008 PSG"
+        ]
+      },
+      {
+        "subject": "01-01-0017 PSG",
+        "records": [
+          "01-01-0017 PSG"
+        ]
+      },
+      {
+        "subject": "01-01-0032 PSG",
+        "records": [
+          "01-01-0032 PSG"
+        ]
+      },
+      {
+        "subject": "01-01-0038 PSG",
+        "records": [
+          "01-01-0038 PSG"
+        ]
+      },
+      {
+        "subject": "01-01-0005 PSG",
+        "records": [
+          "01-01-0005 PSG"
+        ]
+      },
+      {
+        "subject": "01-01-0046 PSG",
+        "records": [
+          "01-01-0046 PSG"
+        ]
+      },
+      {
+        "subject": "01-01-0034 PSG",
+        "records": [
+          "01-01-0034 PSG"
+        ]
+      },
+      {
+        "subject": "01-01-0018 PSG",
+        "records": [
+          "01-01-0018 PSG"
+        ]
+      },
+      {
+        "subject": "01-01-0011 PSG",
+        "records": [
+          "01-01-0011 PSG"
+        ]
+      },
+      {
+        "subject": "01-01-0001 PSG",
+        "records": [
+          "01-01-0001 PSG"
+        ]
+      },
+      {
+        "subject": "01-01-0009 PSG",
+        "records": [
+          "01-01-0009 PSG"
+        ]
+      },
+      {
+        "subject": "01-01-0030 PSG",
+        "records": [
+          "01-01-0030 PSG"
+        ]
+      },
+      {
+        "subject": "01-01-0023 PSG",
+        "records": [
+          "01-01-0023 PSG"
+        ]
+      },
+      {
+        "subject": "01-01-0033 PSG",
+        "records": [
+          "01-01-0033 PSG"
+        ]
+      },
+      {
+        "subject": "01-01-0036 PSG",
+        "records": [
+          "01-01-0036 PSG"
+        ]
+      },
+      {
+        "subject": "01-01-0004 PSG",
+        "records": [
+          "01-01-0004 PSG"
+        ]
+      },
+      {
+        "subject": "01-01-0026 PSG",
+        "records": [
+          "01-01-0026 PSG"
+        ]
+      },
+      {
+        "subject": "01-01-0045 PSG",
+        "records": [
+          "01-01-0045 PSG"
+        ]
+      },
+      {
+        "subject": "01-01-0037 PSG",
+        "records": [
+          "01-01-0037 PSG"
+        ]
+      },
+      {
+        "subject": "01-01-0015 PSG",
+        "records": [
+          "01-01-0015 PSG"
+        ]
+      },
+      {
+        "subject": "01-01-0021 PSG",
+        "records": [
+          "01-01-0021 PSG"
+        ]
+      },
+      {
+        "subject": "01-01-0029 PSG",
+        "records": [
+          "01-01-0029 PSG"
+        ]
+      },
+      {
+        "subject": "01-01-0013 PSG",
+        "records": [
+          "01-01-0013 PSG"
+        ]
+      },
+      {
+        "subject": "01-01-0040 PSG",
+        "records": [
+          "01-01-0040 PSG"
+        ]
+      },
+      {
+        "subject": "01-01-0016 PSG",
+        "records": [
+          "01-01-0016 PSG"
+        ]
+      },
+      {
+        "subject": "01-01-0047 PSG",
+        "records": [
+          "01-01-0047 PSG"
+        ]
+      },
+      {
+        "subject": "01-01-0024 PSG",
+        "records": [
+          "01-01-0024 PSG"
+        ]
+      },
+      {
+        "subject": "01-01-0010 PSG",
+        "records": [
+          "01-01-0010 PSG"
+        ]
+      },
+      {
+        "subject": "01-01-0039 PSG",
+        "records": [
+          "01-01-0039 PSG"
+        ]
+      },
+      {
+        "subject": "01-01-0003 PSG",
+        "records": [
+          "01-01-0003 PSG"
+        ]
+      },
+      {
+        "subject": "01-01-0014 PSG",
+        "records": [
+          "01-01-0014 PSG"
+        ]
+      },
+      {
+        "subject": "01-01-0025 PSG",
+        "records": [
+          "01-01-0025 PSG"
+        ]
+      },
+      {
+        "subject": "01-01-0027 PSG",
+        "records": [
+          "01-01-0027 PSG"
+        ]
+      },
+      {
+        "subject": "01-01-0035 PSG",
+        "records": [
+          "01-01-0035 PSG"
+        ]
+      },
+      {
+        "subject": "01-01-0049 PSG",
+        "records": [
+          "01-01-0049 PSG"
+        ]
+      },
+      {
+        "subject": "01-01-0042 PSG",
+        "records": [
+          "01-01-0042 PSG"
+        ]
+      },
+      {
+        "subject": "01-01-0006 PSG",
+        "records": [
+          "01-01-0006 PSG"
+        ]
+      },
+      {
+        "subject": "01-01-0019 PSG",
+        "records": [
+          "01-01-0019 PSG"
+        ]
+      },
+      {
+        "subject": "01-01-0002 PSG",
+        "records": [
+          "01-01-0002 PSG"
+        ]
+      },
+      {
+        "subject": "01-01-0041 PSG",
+        "records": [
+          "01-01-0041 PSG"
+        ]
+      }
+    ]
+  }
+}

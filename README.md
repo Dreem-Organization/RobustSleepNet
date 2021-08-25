@@ -1,6 +1,6 @@
 # RobustSleepNet
 
-The repo is contains the code from our paper xxxx:
+The repo is contains the code from our paper [RobustSleepNet: Transfer learning for automated sleep staging at scale](https://ieeexplore.ieee.org/document/9492125):
 
 - It allows to train a model on data from one or several sleep studies and to use it to perform sleep staging accurately
   on an unseen sleep study. RobustSleepNet works out-of-the box on new sleep studies (even with a different PSG montage)
@@ -8,12 +8,44 @@ The repo is contains the code from our paper xxxx:
 
 The readme is two organised in two parts:
 
-- The first part is aimed at people who wish to understand the code to train new models, reproduce/improve our work or
-  to understand what is happening under the hood.
-- The second part is aimed at sleep practitioner who want to use RobustSleepNet to perform sleep staging on their sleep
+- The first part is aimed at sleep practitioner who want to use RobustSleepNet to perform sleep staging on their sleep
   studies.
+- The second part is aimed at people who wish to understand the code to train new models, reproduce/improve our work or
+  to understand what is happening under the hood.
 
-## Part 1: RobustSleepNet
+
+## Part 1: How to use RobustSleepNet to perform sleep staging on .edf files. 
+By installing the package you can easily perform sleep staging on .edf files. The software will try to automatically detect suitable derivations to perform sleep staging.
+
+1. install python-3.7.6 using this link: https://www.python.org/downloads/release/python-376/
+2. Install the robust_sleep_net package with 
+```
+pip install git+https://github.com/Dreem-Organization/RobustSleepNet.git
+```
+3.If your file is saved as /path/to/record/record.edf. Run the command: 
+```
+inference_on_edf_file /path/to/record/record.edf
+``` 
+4.The hypnogram from the sleep staging model is saved in the /path/to/record/ folder
+
+The following options are available:
+- --electrodes, default = None, 'List of electrodes to use to perform the sleep staging.'
+- --outfolder, help='Folder where the hypnogram will be save'
+- --timezone, default='Europe/London', help='Timezone of the EDF file'
+- --lights_on, default=None, help='Light on time (timestamp format)'
+- --lights_off, default=None, help='Light off time (timestamp format)'
+- --start_minute, default=False, help='Should the staging start on round minutes ?'
+- --start_30s, default=False, help='Should the staging start on round 30 seconds ?'
+- --consensus_of_models, default=False, help='Should the staging start on round 30 seconds ?'
+
+
+Example of CLI uses:
+```
+inference_on_edf_file /path/to/record/record.edf --consensus_of_models True
+inference_on_edf_file /path/to/record/record.edf --consensus_of_models True --electrodes ['EEG Fpz-Cz']
+```
+
+## Part 2: Replicating the paper result
 
 ### Prerequisites
 
@@ -607,29 +639,3 @@ First the data from each dataset have to be downloaded and processed using scrip
 The scripts/train folder contains the training file for each table and figure of the paper. 
 The scripts/evaluation folder, compute the results once the experiment have been ran.
 The scripts/plots contains the scripts to replicate the plot from the paper by using the data produced by the evaluation scripts.
-
-## Part 2: How to use RobustSleepNet to perform sleep staging on .edf files. 
-By installing the package you can easily perform sleep staging on .edf files. The software will try to automatically detect suitable derivations to perform sleep staging.
-
-1. install python-3.7.6 using this link: https://www.python.org/downloads/release/python-376/
-2. install the compiled dreem_learning_hypnogram package: pip install dist/robust_sleep_net.tar.tar.gz
-3. run the command: inference_on_edf_file /path/to/record/record.edf
-4. the hypnogram from the sleep staging model is saved in the /path/to/record/ folder
-
-The following options are available:
-- --electrodes, default = None, 'List of electrodes to use to perform the sleep staging.'
-- --outfolder, help='Folder where the hypnogram will be save'
-- --timezone, default='Europe/London', help='Timezone of the EDF file'
-- --lights_on, default=None, help='Light on time (timestamp format)'
-- --lights_off, default=None, help='Light off time (timestamp format)'
-- --start_minute, default=False, help='Should the staging start on round minutes ?'
-- --start_30s, default=False, help='Should the staging start on round 30 seconds ?'
-- --consensus_of_models, default=False, help='Should the staging start on round 30 seconds ?'
-
-
-Example of CLI uses:
-```
-inference_on_edf_file /path/to/record/record.edf --consensus_of_models True
-inference_on_edf_file /path/to/record/record.edf --consensus_of_models True --electrodes ['EEG Fpz-Cz']
-```
-
